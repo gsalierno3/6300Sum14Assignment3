@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Converter</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_distance">DistanceActivity</string>
     <string name="title_activity_temperature">TemperatureActivity</string>
     <string name="title_activity_weight">WeightActivity</string>
-
+	<string name="distance">DISTANCE</string>
+	<string name="temperature">TEMPERATURE</string>
+	<string name="weight">WEIGHT</string>
+	<string name="initial_value">Initial Value</string>
+	<string name="celsius">Celsius</string>
+	<string name="farenheit">Fahrenheit</string>
+	<string name="kelvin">Kelvin</string>
+	<string name="from">From</string>
+	<string name="to">To</string>
+	<string name="resault">Result</string>
+	<string name="miles">Miles</string>
+	<string name="feet">Feet</string>
+	<string name="inches">Inches</string>
+	<string name="kilometers">Kilometers</string>
+	<string name="meters">Meters</string>
+	<string name="millimiters">Millimiters</string>
+	<string name="tons_imperial">Tons(British)</string>
+	<string name="kips">Kips</string>
+	<string name="pounds">Pounds</string>
+	<string name="ounces">Ounces</string>
+	<string name="tons_metric">Tons(Metric)</string>
+	<string name="kilograms">Kilograms</string>
+	<string name="grams">Grams</string>
+	<string name="milligrams">Milligrams</string>
+	<string name="back">Back</string>
+	<string name="calculate">Calculate</string>
 </resources>

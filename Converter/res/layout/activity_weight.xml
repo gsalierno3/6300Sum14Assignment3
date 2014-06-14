@@ -1,12 +1,224 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${packageName}.${activityClass}" >
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="@color/app_background"
+    android:fadingEdge="horizontal|vertical"
+    android:orientation="horizontal"
+    tools:context="${packageName}.${activityClass}" xmlns:android="http://schemas.android.com/apk/res/android">
+     <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_background"
+            android:orientation="horizontal"
+            android:textAlignment="center" >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dp"
+                android:shadowColor="@color/title_background"
+                android:text="@string/weight">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/input_field"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="0dp"
+                android:ems="6"
+                android:focusable="false"
+                android:text="@string/initial_value"
+                android:textColor="@color/black_text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editInitialWeight"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/input_field"
+                android:inputType="numberDecimal" >
+
+            </EditText>
+        </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="0dp"
+                android:ems="6"
+                android:focusable="false"
+                android:text="@string/from"
+                android:background="@color/left_column"
+                android:textColor="@color/black_text" >
+            </EditText>
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="0dp"
+                android:ems="6"
+                android:focusable="false"
+                android:text="@string/to"
+                android:background="@color/right_column"
+                android:textColor="@color/black_text" >
+            </EditText>
+            
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/radioGroupWeightFrom"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"                
+                android:layout_height="wrap_content"
+                android:background="@color/left_column"
+                android:baselineAligned="false"
+                android:clipToPadding="false"
+                android:fadingEdge="horizontal|vertical"
+                android:padding="@dimen/RadioPadding" >
+
+                <RadioButton
+                    android:id="@+id/radioFromBritTons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tons_imperial"
+                    android:textColorHint="@color/black_text" />
+
+                <RadioButton
+                    android:id="@+id/radioFromPounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/pounds" />
+                <RadioButton
+                    android:id="@+id/radioFromOunces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ounces" />
+                <RadioButton
+                    android:id="@+id/radioFromMetricTons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tons_metric" />
+                <RadioButton
+                    android:id="@+id/radioFromKilograms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilograms" />
+                <RadioButton
+                    android:id="@+id/radioFromGrams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grams" />
+                </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroupWeightTo"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"                
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/right_column"
+                android:padding="@dimen/RadioPadding"
+                android:showDividers="middle" >
+
+                <RadioButton
+                    android:id="@+id/radioToBritTons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tons_imperial"
+                    android:textColorHint="@color/black_text" />
+
+                <RadioButton
+                    android:id="@+id/radioToPounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pounds" />
+                <RadioButton
+                    android:id="@+id/radioToOunces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ounces" />
+                <RadioButton
+                    android:id="@+id/radioToMetricTons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tons_metric" />
+                <RadioButton
+                    android:id="@+id/radioToKilograms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/kilograms" />
+                <RadioButton
+                    android:id="@+id/radioToGrams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grams" />
+              </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonWeight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="calculateWeight"
+            android:text="@string/calculate" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/input_field"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_margin="0dp"
+                android:ems="6"
+                android:focusable="false"
+                android:text="@string/resault"
+                android:textColor="@color/black_text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/textResultWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/input_field"
+                android:inputType="numberDecimal" >
+
+            </EditText>
+        </LinearLayout>
+   <Button
+         android:id="@+id/button1"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/back" 
+         android:onClick="goBack"/>
+   </LinearLayout>    
+</LinearLayout>
+
