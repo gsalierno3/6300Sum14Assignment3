@@ -24,16 +24,21 @@
         </activity>
         <activity
             android:name="edu.gatech.converter.DistanceActivity"
-            android:label="@string/title_activity_distance" >
+            android:label="@string/title_activity_distance"
+            android:screenOrientation="portrait">            
         </activity>
         <activity
             android:name="edu.gatech.converter.TemperatureActivity"
-            android:label="@string/title_activity_temperature" >
+            android:label="@string/title_activity_temperature" 
+            android:screenOrientation="portrait">>
         </activity>
         <activity
             android:name="edu.gatech.converter.WeightActivity"
-            android:label="@string/title_activity_weight" >
+            android:label="@string/title_activity_weight" 
+            android:screenOrientation="portrait">>
         </activity>
+       
+        
     </application>
 
 </manifest>

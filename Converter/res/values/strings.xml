@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Converter</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Converter</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_distance">DistanceActivity</string>
-    <string name="title_activity_temperature">TemperatureActivity</string>
+    <string name="title_activity_distance">Converter</string>
+    <string name="title_activity_temperature">Converter</string>
     <string name="title_activity_weight">WeightActivity</string>
 	<string name="distance">DISTANCE</string>
 	<string name="temperature">TEMPERATURE</string>

@@ -24,8 +24,10 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_margin="0dp"
+                android:focusable="false"
                 android:shadowColor="@color/title_background"
-                android:text="@string/temperature">
+                android:text="@string/temperature" >
+
             </EditText>
         </LinearLayout>
 
@@ -39,9 +41,11 @@
                 android:layout_width="120dp"
                 android:layout_height="40dp"
                 android:layout_margin="0dp"
-                 android:focusable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:text="@string/initial_value"
                 android:textColor="@color/black_text" >
+
             </EditText>
 
             <EditText
